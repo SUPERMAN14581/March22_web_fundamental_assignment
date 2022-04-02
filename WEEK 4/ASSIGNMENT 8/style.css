@@ -1,0 +1,48 @@
+
+h1{
+    text-align: center;
+}
+.a1{
+    color: #29b475;
+}
+button{
+    background-color: #29b475;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+.div2{
+    width:fit-content;
+    background-color: aliceblue;
+    margin: auto;
+}
+table {
+    padding: 20px;
+}
+.m1{
+    padding:10px 350px 10px 20px;
+}
+input{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+.m3{
+
+    margin: 20px;
+}
+.m4{
+    margin: 20px;
+}
+.img{
+    padding: 0px 400px 0px 0px;
+}
+.btn{
+    padding: 0px 0px 0px 400px;  
+  }
+.p1{
+      padding: 10px;
+  }
+  .div1{
+    background-color: aliceblue;
+  }

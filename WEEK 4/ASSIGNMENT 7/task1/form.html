@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>survey_form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    div {
+    border: 1px  solid red;
+    width: 200px;
+    background-color: yellow;
+  }
+  .m1{
+    margin: 10px;
+    color: red;
+  }
+  #m2{
+    color: black;
+  }
+  </style>
+</head>
+<body>
+  <div>
+      <form>
+        <label class="m1">EMAIL ID</label>
+        <br>
+        <input class="m1" value="" type="email" required placeholder="example@gmail.com"/>
+        <br>
+        <label class="m1" >PASSWORD</label>
+        <br>
+        <input class="m1" type="password" maxlength="8" required placeholder="pasword should be in 8"/>
+        
+        <br>
+        <input class="m1" type="checkbox"/>
+         <label class="m1" id="m2">You are conformed</label>
+        <br>
+        <label class="m1">PHONE NUMBER</label>
+        <br>
+        <input class="m1" type="number"  maxlength="10"required placeholder="1234567890"/>
+        <button>submit</button>
+      </form>
+      </div>
+</body>
+</html>

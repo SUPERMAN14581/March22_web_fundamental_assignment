@@ -1,0 +1,29 @@
+body{
+    background: url("https://www.maxpixel.net/static/photo/1x/Live-Lightshow-Show-Festival-Stage-Rock-Star-2223113.jpg");
+}
+img {
+    padding-left: 100px;
+}
+h1{
+    text-align: center;
+    background-color: red;
+}
+h2{
+    padding-left: 45%;
+    color: whitesmoke;
+}
+h3{
+    padding-left: 45%;
+    background-color: yellow;
+}
+h4{
+    padding-left: 45%;
+    color: white;
+}
+a{
+    color: white;
+}
+
+
+
+
