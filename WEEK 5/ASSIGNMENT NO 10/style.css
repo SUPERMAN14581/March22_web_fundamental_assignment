@@ -1,0 +1,41 @@
+.container{
+background:url("https://hdfreewallpaper.net/wp-content/uploads/2018/09/hd-wallpapers-1080p-widescreen-nature-free-download.jpg");
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+align-items: center;
+margin: 0px;
+}
+.items{
+  
+    height: 80vh;
+}
+.items1{
+    grid-column: 2 / span 4;
+}
+.items2{
+    grid-column: 7 / span 4;
+    background-color:aliceblue;
+    color: black;
+    padding: 70px;
+    font-size:x-large;
+}
+table{
+    margin: 30px 0px 30px 0px;
+}
+td{
+    padding: 20px;
+    font-size: x-large;
+}
+button{
+    padding: 10px;
+    margin: 20px 0px 20px 200px;
+    background-color: #1877f2;
+    font-size: xx-large;
+    color: white;
+    border-radius: 5px;
+    
+}
+img{
+    align-content: center;
+}

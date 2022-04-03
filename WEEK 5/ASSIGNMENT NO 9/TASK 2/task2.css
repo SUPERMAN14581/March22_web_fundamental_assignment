@@ -1,0 +1,69 @@
+.container{
+    width: 900px;
+    height:50vh;
+    border: 2px solid black;
+    display: grid;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: aqua;
+    padding: 20px 10px 20px 10px;
+    grid-template-columns: repeat( 4, 1fr );
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "A A B C"
+    "D E F Z"
+    "G G H I"
+    "G G J Y"
+    "K K K L"
+    "M U W X";
+    
+    }
+    .items{
+        padding: 30px;
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+    .items1{
+        grid-area: A;
+    }
+    .items2{
+        grid-area: B;
+    }
+    .items3{
+        grid-area: C;
+    }
+    .items4{
+        grid-area: D;
+    }
+    .items5{
+        grid-area: E;
+    }
+    .items6{
+        grid-area: F;
+    }
+    .items7{
+        grid-area: G;
+    }
+    .items8{
+        grid-area: H;
+    }
+    .items9{
+        grid-area: I;
+    }
+    .items10{
+        grid-area: J;
+    }
+    .items11{
+        grid-area: K;
+    }
+    .items12{
+        grid-area: L;
+    }
+    .items13{
+        grid-area: M;
+    }
+    
+
+    

@@ -1,0 +1,35 @@
+.container{
+width: 900px;
+height:50vh;
+border: 2px solid black;
+display: grid;
+column-gap: 5px;
+row-gap: 5px;
+background-color: aqua;
+padding: 20px 10px 20px 10px;
+grid-template-columns: repeat( 3, 1fr );
+grid-template-rows: 1fr 1fr;
+grid-template-areas: 
+"A A B"
+"C D B";
+
+}
+.items{
+    padding: 30px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.items1{
+    grid-area: A;
+}
+.items2{
+    grid-area: B;
+}
+.items3{
+    grid-area: C;
+}
+.items4{
+    grid-area: D;
+}
