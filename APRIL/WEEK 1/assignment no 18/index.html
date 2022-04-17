@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        padding: 30px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        margin: 100px auto;
+      }
+      button {
+        background-color: blueviolet;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        margin-right: 10px;
+      }
+    </style>
+    <script>
+      function Friend() {
+        var img1Ref = document.getElementById("img1");
+        img1Ref.src =
+          "https://m.media-amazon.com/images/M/MV5BZDc2NTg5YWUtZGZlZC00Y2VmLTgwZjEtZDUxM2QyNGRmYjZlXkEyXkFqcGdeQWFybm8@._V1_QL75_UX500_CR0,0,500,281_.jpg";
+
+        img1Ref.style.borderRadius = "0%";
+      }
+      function Family() {
+        var imgRef = document.getElementById("img1");
+
+        imgRef.src =
+          "https://nationaltoday.com/wp-content/uploads/2021/05/Day-of-Families-1.jpg";
+
+        imgRef.style.borderRadius = "50%";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img
+        id="img1"
+        src="https://m.media-amazon.com/images/M/MV5BZDc2NTg5YWUtZGZlZC00Y2VmLTgwZjEtZDUxM2QyNGRmYjZlXkEyXkFqcGdeQWFybm8@._V1_QL75_UX500_CR0,0,500,281_.jpg"
+        width="300"
+        height="300"
+      />
+      <br />
+      <button onclick="Friend()">Friend</button>
+
+      <button onclick="Family()">Family</button>
+    </div>
+  </body>
+</html>
