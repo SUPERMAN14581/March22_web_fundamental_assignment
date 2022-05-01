@@ -1,6 +1,6 @@
 .container{
     width: 900px;
-    height:50vh;
+    height:70vh;
     border: 2px solid black;
     display: grid;
     column-gap: 5px;
