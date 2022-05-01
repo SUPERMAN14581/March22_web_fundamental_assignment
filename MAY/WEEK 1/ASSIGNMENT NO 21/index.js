@@ -1,89 +1,56 @@
-const todos = []
+const homeBtn = document.querySelector("#home")
+const booksBtn = document.querySelector("#books")
+const kindleBtn = document.querySelector("#kindle")
 
-const maindiv = document.querySelector('.todos3')
+const main = document.querySelector('#main')
 
-const form = document.querySelector('form')
+homeBtn.addEventListener('click', displayHome)
 
-form.addEventListener('submit',additem)
+booksBtn.addEventListener('click', displayBooks)
 
-const input = document.querySelector('.input1')
+kindleBtn.addEventListener('click', displayKindle)
 
-const clearBtn = document.querySelector(".clear-btn")
-
-clearBtn.addEventListener('click',clearItems);
-
-const editinput = document.querySelector('input.value') 
-
-function additem(event){
-    event.preventDefault()
-
-    const item = {
-        id: Date.now(),
-        task :input.value
-    }
-   todos.push(item)
-
-   input.value=''
-   displayListToScreen()
-   }
-
-function displayListToScreen(){
-
-    maindiv.innerHTML = ''
-    for (let i = 0; i < todos.length; i++) {
-        const element = todos[i];
- 
-        const itemHTMl = 
-         `
-           <div class="grocery-item">
-                 <p class = "title">${element.task}</p>
-                 <button class="edit-btn"onclick="editItem(${element.id})"><i class="fas fa-edit"></i></button>
-                 <button class="delete-btn" onclick="deleteItem(${element.id})"><i class="fas fa-trash"></i></button>
-             </div>
-         `
-         maindiv.innerHTML = maindiv.innerHTML + itemHTMl
-         showclearbtn()
-
-    }
-    
+function displayHome(){
+    booksBtn.classList.remove('btn-active')
+    kindleBtn.classList.remove('btn-active')
+    homeBtn.classList.add('btn-active')
+    const para = `<p>${home}</p>`
+    main.innerHTML = para
 }
 
-function deleteItem(id){
-    let itemIndex = -1
-    for (let i = 0; i < todos.length; i++) {
-        const element = todos[i];
-        if(element.id === id){
-            itemIndex = i
-        }
-    }
-
-    todos.splice(itemIndex, 1)
-    console.log("updated todos", todos)
-
-    displayListToScreen()
+function displayBooks(){
+    booksBtn.classList.add('btn-active')
+    homeBtn.classList.remove('btn-active')
+    kindleBtn.classList.remove('btn-active')
+    const para = `<p>${books}</p>`
+    main.innerHTML = para
 }
 
-function showclearbtn(){
-    clearBtn.classList.remove('clear-inactive')
+function displayKindle(){
+    homeBtn.classList.remove('btn-active')
+    booksBtn.classList.remove('btn-active')
+    kindleBtn.classList.add('btn-active')
+    const para = `<p>${kindle}</p>`
+    main.innerHTML = para
 }
 
-function clearItems(){
-    todos.splice(0, todos.length)
-     displayListToScreen()
-}
 
-function editItem(id){
-    let itemIndex = -1
-    for (let i = 0; i < todos.length; i++) {
-        const element = todos[i];
-        if(element.id === id){
-            itemIndex = i
-        }
-    }
 
-    todos.push(itemIndex, 0, todos[i])
-    console.log("updated todos", todos)
 
-   editinput.value = displayListToScreen()
 
-}
+const home = ` HOME
+What is the switch statement?
+The switch statement evaluates an expression, matching the expression’s value to a case clause, and executes statements associated with that case, as well as statements in cases that follow the matching case.`
+
+const books = `BOOKS
+Problems with switch
+The switch case is a little difficult to read and a bit ancient, and it’s prone to debugging problems.
+The odd thing about the switch case is that you have to include the keyword break at the end of each case to prevent the control from moving to the next.
+in addition to that, it’s a disaster when it comes to mapping complex scenarios, which can lead to difficult debugging and nested errors.
+Every time we write a switch statement, we must exercise extreme caution.
+The joy of writing code i`
+
+const kindle = `KINDLE
+Summing up
+This isn’t to say that the switch statement isn’t useful or that using object literals is always the best option. Object literals as switches, on the other hand, should become another tool in your javascript toolbox.
+You can find the f`
